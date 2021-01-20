@@ -71,7 +71,7 @@ def get_response(msg):
 	if msg == '/help':
 		return help_message
 
-	get_pin_url = re.search("(?P<url>https?://[^\s]+)", message)
+	get_pin_url = re.search("(?P<url>https?://[^\s]+)", msg)
 	if get_pin_url:
 
 		pin_url = get_pin_url.group('url')
