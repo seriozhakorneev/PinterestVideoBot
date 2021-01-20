@@ -63,7 +63,7 @@ class PinterestParser:
 
 	def close_browser(self):
 		self.driver.quit()
-		
+
 help_message = '➕Send pin to this bot via Pinterest\n➕Or send him a https:// pin address'
 
 def get_response(msg):

@@ -24,7 +24,8 @@ def respond():
     if text:
     	text.encode('utf-8').decode()
     	response = get_response(text)
-    	bot.sendMessage(chat_id=chat_id, parse_mode='HTML', text=response, reply_to_message_id=msg_id)
+    	if response:
+    		bot.sendMessage(chat_id=chat_id, parse_mode='HTML', text=response)
 
     return 'ok'
 
