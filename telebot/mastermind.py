@@ -14,10 +14,7 @@ class PinterestParser:
 		self.op.add_argument("--headless")
 		self.op.add_argument("--no-sandbox")
 		self.op.add_argument("--disable-dev-sh-usage")
-		# heroku deploy
-		self.driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=self.op)
-		# localy
-		#self.PATH = '/home/sergei/code/test/instatest/app/chromedriver'
+		self.PATH = '/path/to/chromedriver'
 		#self.driver = webdriver.Chrome(executable_path=self.PATH, options=self.op)
 		self.pin_url = pin_url
 
